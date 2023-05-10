@@ -11,4 +11,5 @@ router.get('/user-list/', UserController.listUsers)
 router.delete('/user-delete/:id', UserController.deleteUser)
 router.get('/list-one/:id', UserController.listOne)
 
+
 module.exports = router
