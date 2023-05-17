@@ -2,12 +2,12 @@ const User = require('../models/User')
 module.exports = {
     async createUser(req, res) {
         try {
-            const { name, email, phone, password, position } = req.body
+            const { name, email, phone, password, função } = req.body
             const user = await User.findOne({ where: { email } })
             if (user) {
                 res.status(401).json({ message: "Já existe um usuario com este email" })
             } else {
-                const user = await User.create({ name, email, phone, password, position })
+                const user = await User.create({ name, email, phone, password, função })
                 res.status(200).json({ user })
             }
         } catch (error) {
@@ -17,12 +17,12 @@ module.exports = {
     async updateUser(req, res) {
         try {
             const { id } = req.params
-            const { name, email, phone, password, position } = req.body
+            const { name, email, phone, password, função } = req.body
             const user = await User.findOne({ where: { id } })
             if (!user) {
                 res.status(401).json({ message: "Nenhum usuario encontrado" })
             } else {
-                const user = await User.update({ name, email, phone, password, position }, { where: { id } })
+                const user = await User.update({ name, email, phone, password, função }, { where: { id } })
                 res.status(200).json({ id })
             }
         } catch (error) {

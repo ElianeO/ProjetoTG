@@ -7,7 +7,7 @@ class User extends Model {
       email: DataTypes.STRING,
       phone: DataTypes.STRING,
       password: DataTypes.STRING,
-      position: DataTypes.STRING
+      função: DataTypes.STRING
     }, {
       sequelize
     })
