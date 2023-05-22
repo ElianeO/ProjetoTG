@@ -2,7 +2,7 @@ const { Router } = require('express')
 
 const UserController = require('./controllers/UserController')
 
-const PessoaJuridicaController = require('./controllers/PessoaJuridicaController')
+const EmpresasController = require('./controllers/EmpresasController')
 
 const router = Router()
 
@@ -12,6 +12,6 @@ router.get('/user-list/', UserController.listUsers)
 router.delete('/user-delete/:id', UserController.deleteUser)
 router.get('/user-list-one/:id', UserController.listOne)
 
-router.post('./pj-create', PessoaJuridicaController.createPJ)
+router.post('./empresa-create', EmpresasController.createEmpresa)
 
 module.exports = router
