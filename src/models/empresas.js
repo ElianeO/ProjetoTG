@@ -9,6 +9,7 @@ class Empresas extends Model {
     email: DataTypes.STRING,
     phone: DataTypes.STRING,
     endereco: DataTypes.STRING,
+    porte: DataTypes.STRING,
     atividade: DataTypes.STRING
   }, {
     sequelize

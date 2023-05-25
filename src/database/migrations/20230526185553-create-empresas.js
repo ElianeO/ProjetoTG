@@ -34,14 +34,18 @@ module.exports = {
         allowNull: false
       },
       atividade: {
-        type: Sequelize.STRING(20),
+        type: Sequelize.STRING(30),
         allowNull: false
       },
-      createdAt: {
+      porte: {
+        type: Sequelize.STRING(50),
+        allowNull: false
+      },
+      created_at: {
         allowNull: false,
         type: Sequelize.DATE
       },
-      updatedAt: {
+      updated_at: {
         allowNull: false,
         type: Sequelize.DATE
       }
