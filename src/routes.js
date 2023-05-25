@@ -19,5 +19,9 @@ router.get('/empresa-list-one/:id', EmpresasController.listOne)
 router.delete('/empresa-delete/:id', EmpresasController.deleteEmpresa)
 
 router.post('/cliente-create/', ClientesController.createClientes)
+router.put('/cliente-update/:id', ClientesController.updateCliente)
+router.get('/clientes-list', ClientesController.listClientes)
+router.get('/cliente-list-one/:id', ClientesController.listOne)
+router.delete('/cliente-delete/:id', ClientesController.deleteCliente)
 
 module.exports = router
