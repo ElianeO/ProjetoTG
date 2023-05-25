@@ -1,7 +1,6 @@
 const { Router } = require('express')
 
 const UserController = require('./controllers/UserController')
-
 const EmpresasController = require('./controllers/EmpresasController')
 const ClientesController = require('./controllers/ClientesController')
 
