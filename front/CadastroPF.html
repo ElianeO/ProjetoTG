@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pessoa Juridica</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap');
+
+        * {
+            font-family: Karantina;
+        }
+
+        body {
+            background: linear-gradient(182.9deg, #757677 42.58%, #D6D6D7 117.8%);
+        }
+
+        h1{
+            position: absolute;
+            width: 261px;
+            height: 46px;
+            left: 1154px;
+            top: 13px;
+
+            font-family: 'Karantina';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 43px;
+            text-decoration-line: underline;
+
+            color: #590000;
+            opacity: 0.8;
+        }
+
+        h2 {
+            font-family: 'Karantina';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 30px;
+            text-decoration-line: underline;
+            color: #590000;
+        }
+
+        form {
+            font-family: 'Karantina';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 32px;
+            color: #000000;
+        }
+
+        input {
+            background-color: #0000002E;
+            border-radius: 10px;
+            width: auto;
+            height: 33px;
+        }
+
+        button {
+            position: absolute;
+            width: 175px;
+            height: 55px;
+            left: 619px;
+            top: 662px;
+            background: #590000;
+            border-radius: 40px;
+
+            font-family: 'Karantina';
+            font-style: normal;
+            font-size: 35px;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>CADASTRO DO CLIENTE</h1>
+
+        <h2>Dados do Cliente</h2>
+        Código <input type="number">
+        Nome <input type="text">
+        CPF <input type="text">
+        Data de nascimento <input type="date">
+        
+        <h2>Endereço</h2>
+        Rua <input type="text">
+        Número <input type="number">
+        CEP <input type="number">
+        Bairro <input type="text">
+        Cidade <input type="text">
+        Estado <input type="text">
+
+        <h2>Dados para Contato</h2>
+        Email <input type="text">
+        Telefone <input type="text">
+        Outro telefone <input type="text">
+
+        <button type="submit">Gravar</button>
+    </form>    
+</body>
+
+</html>
